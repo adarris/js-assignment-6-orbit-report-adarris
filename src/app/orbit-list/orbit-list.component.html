@@ -6,9 +6,9 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr *ngFor="let loopSatellites of satellites">
+    <tr *ngFor="let loopSatellites of satellites" id="satelliteData">
         <td>{{loopSatellites.name}}</td>
-        <td>{{loopSatellites.type}}</td>
+        <td>{{loopSatellites.type}}[.warning]</td>
         <td>{{loopSatellites.operational}}</td>
         <td>{{loopSatellites.orbitType}}</td>
         <td>{{loopSatellites.launchDate}}</td>
